@@ -1,6 +1,5 @@
 a = int(input())
-ar = []
+ar = list(map(int, input().split()))
 for i in range(a):
-    ar.append(int(input()))
-
-print(i % 2 == 0 for i in range(len(ar)))
+    if i % 2 == 0:
+        print(ar[i], end = ' ')
