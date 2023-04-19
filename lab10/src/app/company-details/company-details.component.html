@@ -1,0 +1,11 @@
+<div>
+    <div>
+        <p>{{company.name}}</p>
+        <p>{{company.city}}</p>
+        <p>{{company.address}}</p>
+        <p>{{company.description}}</p>
+    </div>
+    <ng-container *ngFor="let vacancy of company.vacancies">
+        <app-vacancy-card [vacancy]="vacancy"></app-vacancy-card>
+    </ng-container>
+</div>
